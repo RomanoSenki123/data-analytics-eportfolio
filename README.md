@@ -20,8 +20,3 @@ Open `index.html` in a web browser. All links use relative paths so the copied o
 
 The portfolio is being updated as the module progresses. Source and row-level datasets, generated database files, and the supplied course workbook are retained locally rather than included in this repository. The site presents selected results, scripts, audit summaries, and integrity-test evidence instead.
 
-## Publishing safely
-
-Do not ZIP or drag-and-drop this entire working directory. It contains a `.git` directory and local source files, including row-level CSVs, a course workbook and a SQLite database. `.gitignore` prevents Git from tracking those files, but does not exclude them from a manual upload or ZIP.
-
-Create a separate publish copy containing only the six HTML pages, `css/`, `js/`, and the selected linked evidence under `assets/`. Include the two Unit 6 ERD images, which are used by the site but are not currently tracked by Git. Check the publish copy's links and images before uploading it or creating the compressed working copy for submission.
