@@ -1,0 +1,18 @@
+Unit 5 Ebola dataset profile
+============================
+Source: https://raw.githubusercontent.com/cmrivers/ebola/master/country_timeseries.csv
+Accessed: 2026-09-19
+Rows: 122
+Columns: 18
+Date range: 2014-03-22 to 2015-01-05
+Missing cells: 1214 (55.28%)
+Duplicate dates: 0
+Malformed rows: 0
+Downward cumulative revisions detected: 32
+
+Interpretation:
+Blank values were retained because absence may mean that a country was not
+included in a particular situation report; it should not automatically be
+interpreted as zero. Downward revisions were flagged rather than corrected
+because cumulative surveillance totals can be retrospectively reclassified.
+The repository is appropriate for historical learning, not current reporting.

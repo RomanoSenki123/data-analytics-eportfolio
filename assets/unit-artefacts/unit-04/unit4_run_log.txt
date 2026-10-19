@@ -1,0 +1,11 @@
+UNIT 4 DATA-CLEANING RUN
+Run date: 2026-09-19
+Source rows inspected: 9,008
+Source columns: 159
+Completed interviews: 7,914
+Missing cells identified: 606,612
+Invalid-width rows: 0
+Duplicate record IDs: 0
+Evidence sample rows written: 100
+Clean sample: mn_clean_sample.csv
+Audit summary: unit4_cleaning_summary.json

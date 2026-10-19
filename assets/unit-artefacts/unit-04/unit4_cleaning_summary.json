@@ -1,0 +1,43 @@
+{
+  "activity": "Unit 4 data cleaning and transformation",
+  "run_date": "2026-09-19",
+  "source_repository": "https://github.com/jackiekazil/data-wrangling/tree/master/data/unicef",
+  "source_files": [
+    "mn.csv",
+    "mn_headers.csv"
+  ],
+  "source_rows": 9008,
+  "source_columns": 159,
+  "invalid_width_rows": 0,
+  "missing_cells_identified": 606612,
+  "duplicate_record_ids": 0,
+  "completed_interviews": 7914,
+  "evidence_sample_rows": 100,
+  "selected_field_meanings": {
+    "cluster_number": "Cluster number",
+    "household_number": "Household number",
+    "line_number": "Line number",
+    "interview_status": "Result of man's interview",
+    "area": "Area",
+    "region": "Region",
+    "age_group": "Age",
+    "marital_status": "Marital/Union status",
+    "education_level": "Highest education level (derived field)",
+    "sample_weight": "Men's survey sample weight (derived field)"
+  },
+  "cleaning_steps": [
+    "Preserved both original source files unchanged.",
+    "Inspected dataset dimensions and row widths.",
+    "Used mn_headers.csv to interpret coded column names.",
+    "Identified blank and NA values and used one empty representation in the output.",
+    "Checked record identifiers for duplicates.",
+    "Filtered the evidence sample to completed interviews.",
+    "Selected relevant fields and wrote readable output headers.",
+    "Limited the portfolio output to 100 records."
+  ],
+  "limitations": [
+    "The output is an illustrative sample, not a new research analysis.",
+    "The source data and field definitions remain authoritative.",
+    "Missingness was profiled but no values were imputed."
+  ]
+}

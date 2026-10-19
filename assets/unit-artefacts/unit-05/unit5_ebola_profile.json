@@ -1,0 +1,320 @@
+{
+  "source": {
+    "repository": "https://github.com/cmrivers/ebola",
+    "file_url": "https://raw.githubusercontent.com/cmrivers/ebola/master/country_timeseries.csv",
+    "accessed": "2026-09-19",
+    "scope": "Historical 2014 West African Ebola outbreak data",
+    "repository_notice": "The maintainer states that updates stopped on 15 December 2015 and warns that manually digitised records may contain errors."
+  },
+  "profile": {
+    "rows": 122,
+    "columns": 18,
+    "date_range": {
+      "start": "2014-03-22",
+      "end": "2015-01-05"
+    },
+    "missing_cells": 1214,
+    "total_cells": 2196,
+    "missing_percentage": 55.28,
+    "missing_by_column": {
+      "Date": 0,
+      "Day": 0,
+      "Cases_Guinea": 29,
+      "Cases_Liberia": 39,
+      "Cases_SierraLeone": 35,
+      "Cases_Nigeria": 84,
+      "Cases_Senegal": 97,
+      "Cases_UnitedStates": 104,
+      "Cases_Spain": 106,
+      "Cases_Mali": 110,
+      "Deaths_Guinea": 30,
+      "Deaths_Liberia": 41,
+      "Deaths_SierraLeone": 35,
+      "Deaths_Nigeria": 84,
+      "Deaths_Senegal": 100,
+      "Deaths_UnitedStates": 104,
+      "Deaths_Spain": 106,
+      "Deaths_Mali": 110
+    },
+    "duplicate_dates": [],
+    "malformed_rows": [],
+    "downward_revision_count": 32,
+    "downward_revisions": [
+      {
+        "column": "Cases_Guinea",
+        "previous_date": "5/7/2014",
+        "previous_value": 236,
+        "current_date": "5/10/2014",
+        "current_value": 233,
+        "change": -3
+      },
+      {
+        "column": "Cases_Guinea",
+        "previous_date": "6/16/2014",
+        "previous_value": 398,
+        "current_date": "6/18/2014",
+        "current_value": 390,
+        "change": -8
+      },
+      {
+        "column": "Cases_Guinea",
+        "previous_date": "6/30/2014",
+        "previous_value": 413,
+        "current_date": "7/2/2014",
+        "current_value": 412,
+        "change": -1
+      },
+      {
+        "column": "Cases_Guinea",
+        "previous_date": "7/2/2014",
+        "previous_value": 412,
+        "current_date": "7/6/2014",
+        "current_value": 408,
+        "change": -4
+      },
+      {
+        "column": "Cases_Guinea",
+        "previous_date": "7/8/2014",
+        "previous_value": 409,
+        "current_date": "7/12/2014",
+        "current_value": 406,
+        "change": -3
+      },
+      {
+        "column": "Cases_Guinea",
+        "previous_date": "7/14/2014",
+        "previous_value": 411,
+        "current_date": "7/17/2014",
+        "current_value": 410,
+        "change": -1
+      },
+      {
+        "column": "Cases_Guinea",
+        "previous_date": "10/27/2014",
+        "previous_value": 1906,
+        "current_date": "10/29/2014",
+        "current_value": 1667,
+        "change": -239
+      },
+      {
+        "column": "Cases_Liberia",
+        "previous_date": "3/27/2014",
+        "previous_value": 8,
+        "current_date": "3/28/2014",
+        "current_value": 3,
+        "change": -5
+      },
+      {
+        "column": "Cases_Liberia",
+        "previous_date": "4/24/2014",
+        "previous_value": 35,
+        "current_date": "5/1/2014",
+        "current_value": 13,
+        "change": -22
+      },
+      {
+        "column": "Cases_Liberia",
+        "previous_date": "5/7/2014",
+        "previous_value": 13,
+        "current_date": "5/10/2014",
+        "current_value": 12,
+        "change": -1
+      },
+      {
+        "column": "Cases_Liberia",
+        "previous_date": "10/25/2014",
+        "previous_value": 6535,
+        "current_date": "10/31/2014",
+        "current_value": 6525,
+        "change": -10
+      },
+      {
+        "column": "Cases_SierraLeone",
+        "previous_date": "3/27/2014",
+        "previous_value": 6,
+        "current_date": "3/28/2014",
+        "current_value": 2,
+        "change": -4
+      },
+      {
+        "column": "Cases_SierraLeone",
+        "previous_date": "4/15/2014",
+        "previous_value": 12,
+        "current_date": "4/22/2014",
+        "current_value": 0,
+        "change": -12
+      },
+      {
+        "column": "Cases_SierraLeone",
+        "previous_date": "10/29/2014",
+        "previous_value": 5338,
+        "current_date": "11/2/2014",
+        "current_value": 4759,
+        "change": -579
+      },
+      {
+        "column": "Cases_Nigeria",
+        "previous_date": "8/9/2014",
+        "previous_value": 13,
+        "current_date": "8/11/2014",
+        "current_value": 12,
+        "change": -1
+      },
+      {
+        "column": "Cases_Nigeria",
+        "previous_date": "9/5/2014",
+        "previous_value": 22,
+        "current_date": "9/7/2014",
+        "current_value": 21,
+        "change": -1
+      },
+      {
+        "column": "Cases_Nigeria",
+        "previous_date": "9/13/2014",
+        "previous_value": 21,
+        "current_date": "9/21/2014",
+        "current_value": 20,
+        "change": -1
+      },
+      {
+        "column": "Cases_Senegal",
+        "previous_date": "9/7/2014",
+        "previous_value": 3,
+        "current_date": "9/10/2014",
+        "current_value": 1,
+        "change": -2
+      },
+      {
+        "column": "Deaths_Guinea",
+        "previous_date": "5/7/2014",
+        "previous_value": 158,
+        "current_date": "5/10/2014",
+        "current_value": 157,
+        "change": -1
+      },
+      {
+        "column": "Deaths_Guinea",
+        "previous_date": "7/8/2014",
+        "previous_value": 309,
+        "current_date": "7/12/2014",
+        "current_value": 304,
+        "change": -5
+      },
+      {
+        "column": "Deaths_Liberia",
+        "previous_date": "3/27/2014",
+        "previous_value": 6,
+        "current_date": "3/28/2014",
+        "current_value": 3,
+        "change": -3
+      },
+      {
+        "column": "Deaths_Liberia",
+        "previous_date": "3/28/2014",
+        "previous_value": 3,
+        "current_date": "3/29/2014",
+        "current_value": 2,
+        "change": -1
+      },
+      {
+        "column": "Deaths_Liberia",
+        "previous_date": "4/16/2014",
+        "previous_value": 13,
+        "current_date": "4/20/2014",
+        "current_value": 6,
+        "change": -7
+      },
+      {
+        "column": "Deaths_Liberia",
+        "previous_date": "10/18/2014",
+        "previous_value": 2705,
+        "current_date": "10/25/2014",
+        "current_value": 2413,
+        "change": -292
+      },
+      {
+        "column": "Deaths_Liberia",
+        "previous_date": "11/8/2014",
+        "previous_value": 2836,
+        "current_date": "11/10/2014",
+        "current_value": 2812,
+        "change": -24
+      },
+      {
+        "column": "Deaths_Liberia",
+        "previous_date": "11/15/2014",
+        "previous_value": 2964,
+        "current_date": "11/18/2014",
+        "current_value": 2963,
+        "change": -1
+      },
+      {
+        "column": "Deaths_SierraLeone",
+        "previous_date": "3/27/2014",
+        "previous_value": 5,
+        "current_date": "3/28/2014",
+        "current_value": 2,
+        "change": -3
+      },
+      {
+        "column": "Deaths_SierraLeone",
+        "previous_date": "4/11/2014",
+        "previous_value": 2,
+        "current_date": "4/22/2014",
+        "current_value": 0,
+        "change": -2
+      },
+      {
+        "column": "Deaths_SierraLeone",
+        "previous_date": "6/17/2014",
+        "previous_value": 49,
+        "current_date": "6/18/2014",
+        "current_value": 28,
+        "change": -21
+      },
+      {
+        "column": "Deaths_SierraLeone",
+        "previous_date": "10/29/2014",
+        "previous_value": 1510,
+        "current_date": "11/2/2014",
+        "current_value": 1070,
+        "change": -440
+      },
+      {
+        "column": "Deaths_UnitedStates",
+        "previous_date": "10/12/2014",
+        "previous_value": 1,
+        "current_date": "10/14/2014",
+        "current_value": 0,
+        "change": -1
+      },
+      {
+        "column": "Deaths_Spain",
+        "previous_date": "10/14/2014",
+        "previous_value": 1,
+        "current_date": "10/19/2014",
+        "current_value": 0,
+        "change": -1
+      }
+    ]
+  },
+  "transformation": {
+    "output_file": "ebola_core_timeseries.csv",
+    "selected_columns": [
+      "Date",
+      "Day",
+      "Cases_Guinea",
+      "Deaths_Guinea",
+      "Cases_Liberia",
+      "Deaths_Liberia",
+      "Cases_SierraLeone",
+      "Deaths_SierraLeone"
+    ],
+    "changes": [
+      "Rows sorted from earliest to latest date",
+      "Dates standardised to ISO 8601 format",
+      "Columns limited to cases and deaths for Guinea, Liberia and Sierra Leone",
+      "Missing values retained; no imputation performed"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+Unit 7 normalisation and relational database integrity tests
+Source: DBD_PCOM7E_Table.xlsx
+Assumption: ExamScore is student-level because the source supplies one score per student.
+
+PASS: Student row count = 5 (expected 5)
+PASS: Teacher row count = 5 (expected 5)
+PASS: ExamBoard row count = 5 (expected 5)
+PASS: Course row count = 5 (expected 5)
+PASS: Enrolment row count = 15 (expected 15)
+PASS: Enrolment rows without a Student = 0 (expected 0)
+PASS: Enrolment rows without a Course = 0 (expected 0)
+PASS: Enrolment rows without an ExamBoard = 0 (expected 0)
+PASS: Course rows without a Teacher = 0 (expected 0)
+PASS: Duplicate student-course pairs = 0 (expected 0)
+PASS: Fully joined enrolment rows = 15 (expected 15)
+PASS: Foreign key rejects an unknown student
+PASS: Composite primary key rejects a duplicate enrolment
+
+Overall result: PASS

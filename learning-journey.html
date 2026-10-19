@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Unit-by-unit learning evidence for the Data Analytics e-Portfolio.">
+  <title>Learning Journey | Data Analytics E-Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <a class="site-title" href="index.html">Data Analytics E-Portfolio</a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-navigation">Menu</button>
+    <nav id="site-navigation" class="site-navigation" aria-label="Main navigation">
+      <a href="index.html">Home</a><a aria-current="page" href="learning-journey.html">Learning journey</a><a href="discussions.html">Discussions</a><a href="project.html">Project</a><a href="reflection.html">Reflection</a><a href="references.html">References</a>
+    </nav>
+  </header>
+  <main id="main-content">
+    <section class="page-intro"><p class="eyebrow">Units 1–12</p><h1>Learning journey</h1><p class="lead">A unit-by-unit record of my activities, evidence and developing understanding.</p></section>
+    <section class="section stacked" aria-labelledby="unit-evidence">
+      <h2 id="unit-evidence">Unit evidence tracker</h2>
+      <p class="supporting-text">This tracker shows what I have documented so far and which activities are still in progress.</p>
+      <div class="unit-grid">
+        <article class="unit-card"><span>Unit 1</span><h3>Foundations and data collection</h3><a class="status status-progress" href="discussions.html#discussion-1">Retrospective review added</a></article>
+        <article class="unit-card"><span>Unit 2</span><h3>Peer learning and data issues</h3><a class="status status-progress" href="discussions.html#discussion-1">Retrospective review added</a></article>
+        <article class="unit-card"><span>Unit 3</span><h3>Web scraping and reflection</h3><a class="status status-progress" href="#web-scraping">Evidence added</a></article>
+        <article class="unit-card"><span>Unit 4</span><h3>Data cleaning and transformation</h3><a class="status status-progress" href="#data-management-pipeline">Practical evidence added</a></article>
+        <article class="unit-card"><span>Unit 5</span><h3>Data collections and source evaluation</h3><a class="status status-progress" href="#ebola-data-investigation">Investigation evidence added</a></article>
+        <article class="unit-card"><span>Unit 6</span><h3>Database analytics proposal</h3><a class="status status-progress" href="project.html">Proposal documented</a></article>
+        <article class="unit-card"><span>Unit 7</span><h3>Normalisation and relational database</h3><a class="status status-progress" href="#database-normalisation">Database evidence added</a></article>
+        <article class="unit-card"><span>Unit 8</span><h3>Security discussion: initial post</h3><a class="status status-progress" href="discussions.html#discussion-2">Initial post documented</a></article>
+        <article class="unit-card"><span>Unit 9</span><h3>Security discussion: peer responses</h3><a class="status status-progress" href="discussions.html#discussion-2">One response documented</a></article>
+        <article class="unit-card"><span>Unit 10</span><h3>API integration and security</h3><a class="status status-progress" href="#unit-10-integration">Integration reading recorded; API specification outstanding</a></article>
+        <article class="unit-card"><span>Unit 11</span><h3>Final project evidence</h3><a class="status status-progress" href="project.html">Executive summary submitted; evaluation added</a></article>
+        <article class="unit-card"><span>Unit 12</span><h3>Future of big data analytics and individual e-Portfolio</h3><a class="status status-progress" href="reflection.html">Reflection drafted; assessment not submitted</a></article>
+      </div>
+    </section>
+    <section id="web-scraping" class="section"><div><p class="eyebrow">Unit 3 activity</p><h2>Web scraping with Python</h2></div><div class="prose"><p>Using Python, <a href="references.html#ref-requests">Requests</a> and <a href="references.html#ref-beautiful-soup">Beautiful Soup</a>, I retrieved the <a href="references.html#ref-wikipedia">Wikipedia Data science page</a> and searched its paragraphs for “data scientist”. One request returned HTTP 200 and five matching paragraphs. The JSON output records the URL, retrieval time and extracted text.</p><p>The result depends on the page structure and still requires validation. I used a descriptive user-agent, timeout and single request; future scraping should also respect access rules and request limits.</p><div class="button-row"><a class="button" href="assets/unit-artefacts/unit-03/web_scraping.py">View Python script</a><a class="text-link" href="assets/unit-artefacts/unit-03/web_scraping_results.json">View JSON result</a></div><h3>Module Wiki note prepared</h3><p>Web scraping retrieves and parses web content. Results should retain their source and retrieval date.</p></div></section>
+    <section id="data-management-pipeline" class="section"><div><p class="eyebrow">Unit 4 activity</p><h2>Data cleaning and transformation</h2></div><div class="prose"><p>I completed the formative Data Management Pipeline Test and reported a score of 100%; that score is not independently evidenced on this site.</p><p>For a separate reproducible exercise, I used the UNICEF men's survey files supplied with <a href="references.html#ref-kazil-book"><em>Data Wrangling with Python</em></a> (Kazil and Jarmul, 2016a). I preserved the sources, interpreted coded fields using the header dictionary, profiled missing values and identifiers, and selected completed interviews for a 100-record evidence sample.</p><p>The script checked 9,008 rows and 159 columns: 606,612 cells were missing, 7,914 interviews were complete, and no malformed rows or duplicate identifiers were found. I did not impute values without a defensible rule. The script, log and audit summary record the checks and transformations.</p><div class="button-row"><a class="button" href="assets/unit-artefacts/unit-04/inspect_unicef_data.py">View Python script</a><a class="text-link" href="assets/unit-artefacts/unit-04/unit4_run_log.txt">View run log</a><a class="text-link" href="assets/unit-artefacts/unit-04/unit4_cleaning_summary.json">View audit summary</a><a class="text-link" href="assets/unit-artefacts/unit-04/data-management-pipeline-notes.md">View pipeline test notes</a></div></div></section>
+    <section id="ebola-data-investigation" class="section"><div><p class="eyebrow">Unit 5 activity</p><h2>Ebola data collection and source investigation</h2></div><div class="prose"><p>I investigated the historical <a href="references.html#ref-rivers"><code>cmrivers/ebola</code> repository</a> using the data “smell test” of Kazil and Jarmul (2016b). Its documented sources include WHO and West African health ministries, but updates stopped in 2015 and the maintainer notes inconsistencies and manual digitisation.</p><p>I profiled <code>country_timeseries.csv</code>: 122 rows, 18 columns, no duplicate dates, and 1,214 blank cells out of 2,196 (55.28%). I found 32 downward changes in cumulative totals. Rather than replace blanks with zero or “correct” possible reporting revisions, I recorded them and made a smaller country extract.</p><p>The source is useful for historical learning, not current outbreak reporting. The linked assessment and audit files document its provenance, limitations and checks.</p><div class="button-row"><a class="button" href="assets/unit-artefacts/unit-05/ebola-source-assessment.md">View source assessment</a><a class="text-link" href="assets/unit-artefacts/unit-05/profile_ebola_timeseries.py">View Python profile</a><a class="text-link" href="assets/unit-artefacts/unit-05/unit5_run_log.txt">View run log</a><a class="text-link" href="assets/unit-artefacts/unit-05/unit5_ebola_profile.json">View audit summary</a></div></div></section>
+    <section id="database-normalisation" class="section"><div><p class="eyebrow">Unit 7 activity</p><h2>Normalisation and relational database build</h2></div><div class="prose unit-seven-evidence">
+      <h3>Source analysis</h3>
+      <p>The spreadsheet repeats course, board and teacher fields. I treated its single <code>ExamScore</code> per student as student-level; if it measures a course, it belongs on <code>Enrolment</code> instead.</p>
+      <div class="evidence-note"><strong>Functional dependencies used</strong><span><code>StudentNumber → StudentName, ExamScore, Support, DateOfBirth</code></span><span><code>CourseName → TeacherName</code> in the supplied data</span><span><code>(StudentNumber, CourseName) → ExamBoard</code></span></div>
+
+      <h3>Normalisation</h3>
+      <p>For 1NF, I made one row per student-course pair (15 rows), keyed by <code>(StudentNumber, CourseName)</code>. The linked notes explain the derivation.</p>
+
+      <p>For 2NF, I separated student details from courses and kept <code>ExamBoard</code> on the student-course relationship: Maths appears with both AQA and EdExcel.</p>
+
+      <p>No further transitive dependencies were evidenced. The implemented 3NF database gives reusable entities identifiers and connects them with foreign keys.</p>
+      <div class="relationship-flow" aria-label="Database foreign-key relationships"><span>Enrolment references Student, Course and ExamBoard</span><span>Course references Teacher</span></div>
+      <div class="schema-grid schema-grid-five">
+        <article class="schema-card"><h4>Student</h4><p><strong>PK</strong> StudentNumber</p><p>StudentName, ExamScore, Support, DateOfBirth</p></article>
+        <article class="schema-card"><h4>Teacher</h4><p><strong>PK</strong> TeacherID</p><p>TeacherName (unique)</p></article>
+        <article class="schema-card"><h4>Course</h4><p><strong>PK</strong> CourseID</p><p>CourseName (unique), TeacherID (FK)</p></article>
+        <article class="schema-card"><h4>ExamBoard</h4><p><strong>PK</strong> ExamBoardID</p><p>ExamBoardName (unique)</p></article>
+        <article class="schema-card"><h4>Enrolment</h4><p><strong>Composite PK</strong> StudentNumber + CourseID</p><p>StudentNumber, CourseID and ExamBoardID (FKs)</p></article>
+      </div>
+
+      <h3>Database build and integrity testing</h3>
+      <p>I built the 3NF design as a SQLite database from the supplied workbook. The build produced five students, five teachers, five courses, five exam boards and 15 enrolments. I then tested the foreign keys, composite primary key and joined output.</p>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="Referential integrity test results">
+        <table class="data-table results-table">
+          <thead><tr><th scope="col">Test</th><th scope="col">Result</th><th scope="col">Evidence</th></tr></thead>
+          <tbody>
+            <tr><td>Entity and relationship counts</td><td class="result-pass">Pass</td><td>5 students, 5 teachers, 5 courses, 5 boards and 15 enrolments</td></tr>
+            <tr><td>Orphaned foreign keys</td><td class="result-pass">Pass</td><td>0 unmatched student, course, board or teacher references</td></tr>
+            <tr><td>Duplicate student-course pair</td><td class="result-pass">Pass</td><td>0 duplicates; a test insert was rejected by the composite key</td></tr>
+            <tr><td>Unknown student reference</td><td class="result-pass">Pass</td><td>A test insert was rejected by the foreign-key constraint</td></tr>
+            <tr><td>Complete relational join</td><td class="result-pass">Pass</td><td>All 15 enrolments returned with their related entities</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Reflection</h3>
+      <p>This exercise showed that normalisation is driven by dependencies and meaning rather than by splitting a table mechanically. The score field required an explicit interpretation, while the two different boards used for Maths demonstrated why an exam board cannot safely be stored against the course alone. Building and deliberately challenging the keys also showed the difference between a plausible design and one whose integrity rules have been tested.</p>
+      <div class="button-row"><a class="button" href="assets/unit-artefacts/unit-07/unit7_schema.sql">View SQL schema</a><a class="text-link" href="assets/unit-artefacts/unit-07/unit7_integrity_tests.txt">View integrity test log</a><a class="text-link" href="assets/unit-artefacts/unit-07/normalisation-notes.md">View normalisation notes</a><a class="text-link" href="assets/unit-artefacts/unit-07/data-dictionary.md">View data dictionary</a><a class="text-link" href="assets/unit-artefacts/unit-07/build_unit7_database.py">View reproducible build script</a></div>
+    </div></section>
+    <section id="unit-10-integration" class="section"><div><p class="eyebrow">Unit 10 reading</p><h2>IBM–QRadar–Intellas–KAIF integration materials</h2></div><div class="prose"><p>I reviewed the Unit 10 materials on IBM QRadar, Intellas and KAIF integration. A Device Support Module (DSM) parses incoming QRadar events; this is distinct from securing an API used for data exchange.</p><p>This records my engagement with the reading, not completion of the separate team API Security Requirements activity. I have not added a security specification without evidence that our team produced one. My related discussion learning is recorded in the <a href="discussions.html#unit-10-synthesis">Unit 10 synthesis</a>.</p></div></section>
+  </main>
+  <footer class="site-footer"><p>Data Analytics E-Portfolio <span aria-hidden="true">·</span> <span data-current-year></span></p></footer>
+</body>
+</html>
